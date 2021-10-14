@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_Dev_08" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i9U-qC-wk8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieS-nl-mAv">
+                                <rect key="frame" x="146.5" y="434.5" width="121" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0X-0T-72e">
+                                <rect key="frame" x="175" y="492" width="64" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="actionBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y0M-6j-HDW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Randomly Generated Index:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oA2-Ra-kfJ">
+                                <rect key="frame" x="101.5" y="601" width="211" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJG-aj-Zal">
+                                <rect key="frame" x="204.5" y="632" width="5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aBs-ep-Fun"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x0X-0T-72e" firstAttribute="top" secondItem="ieS-nl-mAv" secondAttribute="bottom" constant="30" id="42U-Yx-vaE"/>
+                            <constraint firstItem="x0X-0T-72e" firstAttribute="centerX" secondItem="i9U-qC-wk8" secondAttribute="centerX" id="8DS-yK-0dD"/>
+                            <constraint firstItem="oA2-Ra-kfJ" firstAttribute="top" secondItem="x0X-0T-72e" secondAttribute="bottom" constant="70" id="8S2-5u-2XE"/>
+                            <constraint firstItem="ieS-nl-mAv" firstAttribute="centerY" secondItem="i9U-qC-wk8" secondAttribute="centerY" id="T3U-d5-9zB"/>
+                            <constraint firstItem="hJG-aj-Zal" firstAttribute="top" secondItem="oA2-Ra-kfJ" secondAttribute="bottom" constant="10" id="aBZ-r5-hoJ"/>
+                            <constraint firstItem="ieS-nl-mAv" firstAttribute="centerX" secondItem="i9U-qC-wk8" secondAttribute="centerX" id="b5M-nJ-yaI"/>
+                            <constraint firstItem="oA2-Ra-kfJ" firstAttribute="centerX" secondItem="i9U-qC-wk8" secondAttribute="centerX" id="iTb-44-1t1"/>
+                            <constraint firstItem="hJG-aj-Zal" firstAttribute="centerX" secondItem="i9U-qC-wk8" secondAttribute="centerX" id="juU-1W-TUT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="generatedIndexLabel" destination="hJG-aj-Zal" id="q6C-CD-b2t"/>
+                        <outlet property="greetingLabel" destination="ieS-nl-mAv" id="TCA-nk-UjX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
